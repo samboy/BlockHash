@@ -1,0 +1,12 @@
+commit 133be780976bab7a6d9db40242f7fafb77742ae7
+Author: Sam Trenholme <maradns@samiam.org>
+Date:   Wed Dec 14 15:26:32 2022 -0800
+
+    regenerate.sh: 10 line script to regenerate porn.bin key
+    
+    In this script, we regenerate the porn.bin file so that it does
+    not have an all-0 key.
+    
+    This way, the regenerated porn.bin file can be used without
+    needing to set allow_block_hash_zero_key (and the resulting
+    security issues, albeit slight issues)

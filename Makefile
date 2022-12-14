@@ -1,7 +1,7 @@
 all: blockHashMake blockHashRead
 
 clean:
-	rm -f blockHashMake blockHashRead *.exe
+	rm -f blockHashMake blockHashRead 
 
 blockHashMake: blockHashMake.c
 	$(CC) $(CFLAGS) -o blockHashMake blockHashMake.c

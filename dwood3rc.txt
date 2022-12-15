@@ -1,0 +1,32 @@
+# Lines with a '#' at the beginning are comments ignored by Deadwood's
+# text file parser.
+
+# If you wish to use this program to cache from other recursive servers
+# instead of the Quad9 servers, uncomment the following lines.
+# Replace the IPs if needed.
+#upstream_servers = {}
+#upstream_servers["."]="8.8.8.8, 8.8.4.4" # Servers we connect to
+
+# The IP this program has 
+bind_address="127.10.10.1"
+
+# The IPs allowed to connect and use the cache
+recursive_acl = "127.0.0.1/8"
+
+# We can block more hosts here
+ip4 = {}
+ip4["porn.example.com."] = "X"
+
+# Use the file porn.bin to block over 200,000 unwanted hosts
+blocked_hosts_hash_file = "porn.bin"
+
+# The best way to get Deadwood to read the block hash file is to
+# regenerate it with the regenerate.bat (regenerate.sh on *NIX systems)
+# script.  If one would rather not run the script, there are some minor
+# security issues:
+# An attacker with access to a recursive instance of Deadwood could
+# have Deadwood use more resources than necessary if they know the block
+# hash file being used. Since the block hash file is read only, hash
+# flooding attacks are not possible
+# allow_block_hash_zero_key = 1
+

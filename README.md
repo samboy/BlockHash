@@ -1,6 +1,26 @@
-# What this is
+# Quickstart guide
 
-This is a tool which generates a *block hash*, a list of binary strings 
+The quick start guide for Windows and *NIX varies.
+
+## Windows 10
+
+* Install this folder as C:\BlockHash-1.0.01
+* As non-admin, double click on `regenerate.bat`
+* Right click on `install.bat` and run it as an administrator *after* 
+  inspecting the file to make sure it does *not* contain malware.
+* In the Windows search bar, find and start up `control panel`
+* Find “network and sharing center”
+* Click on “change adaptor settings”
+* Choose the adaptor used for internet access (Wi-Fi, wired, etc.)
+* Right click on that adaptor and select “properties”
+* Double Click on “Internet protocol version 4”
+* Select “Use the following DNS server addresses”
+* Put in “127.0.0.1” for the preferred DNS server
+* Hit “OK” to make the changes stick
+
+# BlockHashMake and BlockHashRead
+
+These are tools which generate a *block hash*, a list of binary strings 
 along with hashing used to generate a compact database which can quickly
 see if a given binary string is in a given list.
 

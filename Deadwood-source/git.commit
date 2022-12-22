@@ -1,12 +1,7 @@
-commit 133be780976bab7a6d9db40242f7fafb77742ae7
+commit 4f83c90dd39794c5fac219f3fc3e3778010c3387
 Author: Sam Trenholme <maradns@samiam.org>
-Date:   Wed Dec 14 15:26:32 2022 -0800
+Date:   Wed Dec 21 16:14:56 2022 -0800
 
-    regenerate.sh: 10 line script to regenerate porn.bin key
+    commit cf3c80043dcc0ac129d0d2aa61191da52e4da375 passes all tests
     
-    In this script, we regenerate the porn.bin file so that it does
-    not have an all-0 key.
-    
-    This way, the regenerated porn.bin file can be used without
-    needing to set allow_block_hash_zero_key (and the resulting
-    security issues, albeit slight issues)
+    Time to release MaraDNS 3.5.0035

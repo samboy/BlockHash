@@ -15,7 +15,7 @@ The quick start guide for Windows and *NIX varies.
 * Right click on that adaptor and select “properties”
 * Double Click on “Internet protocol version 4”
 * Select “Use the following DNS server addresses”
-* Put in “127.0.0.1” for the preferred DNS server
+* Put in “127.10.10.1” for the preferred DNS server
 * Hit “OK” to make the changes stick
 
 # BlockHashMake and BlockHashRead
